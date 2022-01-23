@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width initial-scale=1" />
+        <meta name="author" content="Joshua Harris" />
+
         <link rel="stylesheet" href="./index.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="./index.js" ></script>
@@ -11,16 +13,16 @@
     <body>
         <span id="home"></span>
         <div class="container_header">
-            <button class="nav_top_toggle">button</button>
+            <button class="nav_top_toggle">Navigation</button>
             <h1 class="header_title">Joshua Harris</h1>
             <h1 class="header_title">Web Developer</h1>
             <div class="container_nav_top">
                 <div class="nav_title">Contents</div>
-                <div class="nav_item go_to" data-id="about">About</div>
-                <div class="nav_item go_to" data-id="experience">Experience</div>
-                <div class="nav_item go_to" data-id="projects">Projects</div>
-                <div class="nav_item go_to" data-id="resume">Resume</div>
-                <div class="nav_item go_to" data-id="contact">Contact</div>
+                <div class="nav_item go_to nav_side" data-id="about">About</div>
+                <div class="nav_item go_to nav_side" data-id="experience">Experience</div>
+                <div class="nav_item go_to nav_side" data-id="projects">Projects</div>
+                <div class="nav_item go_to nav_side" data-id="resume">Resume</div>
+                <div class="nav_item go_to nav_side" data-id="contact">Contact</div>
             </div>
         </div>
         <div class="container_body">
@@ -34,7 +36,7 @@
             </div>
             <div class="container_content">
                 <section class="scrollspy" id="about" data-id="about">
-                    <h1>About</h1>
+                    <h1 class="section_title">About</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam explicabo incidunt laboriosam qui tenetur eveniet delectus dolore, animi, officiis id numquam aperiam velit repellat aut quo recusandae, ex accusamus nihil?</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam explicabo incidunt laboriosam qui tenetur eveniet delectus dolore, animi, officiis id numquam aperiam velit repellat aut quo recusandae, ex accusamus nihil?</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam explicabo incidunt laboriosam qui tenetur eveniet delectus dolore, animi, officiis id numquam aperiam velit repellat aut quo recusandae, ex accusamus nihil?</p>
@@ -49,7 +51,7 @@
 
                 </section>
                 <section class="scrollspy" id="experience" data-id="experience">
-                    <h1>Experience</h1>
+                    <h1 class="section_title">Experience</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam explicabo incidunt laboriosam qui tenetur eveniet delectus dolore, animi, officiis id numquam aperiam velit repellat aut quo recusandae, ex accusamus nihil?</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam explicabo incidunt laboriosam qui tenetur eveniet delectus dolore, animi, officiis id numquam aperiam velit repellat aut quo recusandae, ex accusamus nihil?</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam explicabo incidunt laboriosam qui tenetur eveniet delectus dolore, animi, officiis id numquam aperiam velit repellat aut quo recusandae, ex accusamus nihil?</p>
@@ -63,7 +65,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam explicabo incidunt laboriosam qui tenetur eveniet delectus dolore, animi, officiis id numquam aperiam velit repellat aut quo recusandae, ex accusamus nihil?</p>
                 </section>
                 <section class="scrollspy" id="projects" data-id="projects">
-                    <h1>Projects</h1>
+                    <h1 class="section_title">Projects</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam explicabo incidunt laboriosam qui tenetur eveniet delectus dolore, animi, officiis id numquam aperiam velit repellat aut quo recusandae, ex accusamus nihil?</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam explicabo incidunt laboriosam qui tenetur eveniet delectus dolore, animi, officiis id numquam aperiam velit repellat aut quo recusandae, ex accusamus nihil?</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam explicabo incidunt laboriosam qui tenetur eveniet delectus dolore, animi, officiis id numquam aperiam velit repellat aut quo recusandae, ex accusamus nihil?</p>
@@ -77,7 +79,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam explicabo incidunt laboriosam qui tenetur eveniet delectus dolore, animi, officiis id numquam aperiam velit repellat aut quo recusandae, ex accusamus nihil?</p>
                 </section>
                 <section class="scrollspy" id="resume" data-id="resume">
-                    <h1>Resume</h1>
+                    <h1 class="section_title">Resume</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam explicabo incidunt laboriosam qui tenetur eveniet delectus dolore, animi, officiis id numquam aperiam velit repellat aut quo recusandae, ex accusamus nihil?</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam explicabo incidunt laboriosam qui tenetur eveniet delectus dolore, animi, officiis id numquam aperiam velit repellat aut quo recusandae, ex accusamus nihil?</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam explicabo incidunt laboriosam qui tenetur eveniet delectus dolore, animi, officiis id numquam aperiam velit repellat aut quo recusandae, ex accusamus nihil?</p>
@@ -91,7 +93,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam explicabo incidunt laboriosam qui tenetur eveniet delectus dolore, animi, officiis id numquam aperiam velit repellat aut quo recusandae, ex accusamus nihil?</p>
                 </section>
                 <section class="scrollspy" id="contact" data-id="contact">
-                    <h1>Contact</h1>
+                    <h1 class="section_title">Contact</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam explicabo incidunt laboriosam qui tenetur eveniet delectus dolore, animi, officiis id numquam aperiam velit repellat aut quo recusandae, ex accusamus nihil?</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam explicabo incidunt laboriosam qui tenetur eveniet delectus dolore, animi, officiis id numquam aperiam velit repellat aut quo recusandae, ex accusamus nihil?</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam explicabo incidunt laboriosam qui tenetur eveniet delectus dolore, animi, officiis id numquam aperiam velit repellat aut quo recusandae, ex accusamus nihil?</p>

@@ -32,6 +32,7 @@
     /*margin-left: 0px;*/
     /* border: 1px solid black; */
     color: #275662;
+    padding-top: 0px;
 }
 
 .header_title {
@@ -59,6 +60,7 @@
 body {
     margin: 0px;
     background-color: white;
+    min-width: 300px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -81,6 +83,7 @@ body {
 @media only screen and (min-width: 1000px) {
     .nav_top_toggle {
         visibility: hidden;
+        width: 0;
     }
 }
 
@@ -90,6 +93,10 @@ body {
 }
 
 .nav_top_toggle {
-    position: relative;
+    position: sticky;
     /* visibility: hidden; */
+}
+
+.section_title {
+    padding-top: 0px;
 }
