@@ -30,7 +30,7 @@
     /* margin: 10px; */
     /* margin-top: 0px; */
     /*margin-left: 0px;*/
-    border: 1px solid black;
+    /* border: 1px solid black; */
     color: #275662;
     padding-top: 0px;
 }
@@ -97,9 +97,35 @@ body {
 
 .nav_top_toggle {
     position: sticky;
-    /* visibility: hidden; */
+    display: inline;
+    padding: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.nav_top_toggle:hover {
+    background-color: #93abb1;
+}
+
+
+
+.horizontal_line {
+    width: 100%;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+    margin: 5px;
+    flex-direction: row;
+    width: 30px;
+    height: 6px;
+    background-color: #435a60;
+    overflow: hidden;
 }
 
 .section_title {
     padding-top: 0px;
+}
+
+section {
+    margin: 0;
+    height: 1000;
 }
