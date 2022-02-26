@@ -6,12 +6,11 @@
         <meta name="author" content="Joshua Harris" />
 
         <link rel="stylesheet" href="./css/index.css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script rel="text/javascript" src="./javascript/throttle_debounce.js"></script>
-        <script src="./javascript/index.js" ></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+        <!-- <script rel="text/javascript" type="module" src="./javascript/throttle_debounce.js"></script> -->
         <title>Joshua Harris | Web Developer</title>
     </head>
-    <body>
+    <body class="body">
         <span id="home"></span>
         <div class="container_header">
             <div class="nav_top_toggle">
@@ -22,22 +21,22 @@
             <h1 class="header_title">Joshua Harris</h1>
             <h1 class="header_title">Web Developer</h1>
             <div class="container_nav_top">
-                <div class="nav_title">Contents</div>
-                <div href="#about" class="nav_item go_to nav_side" data-id="about">About</div>
-                <div href="#experience" class="nav_item go_to nav_side" data-id="experience">Experience</div>
-                <div href="#projects" class="nav_item go_tonav_side" data-id="projects">Projects</div>
-                <div href="#resume" class="nav_item go_to nav_side" data-id="resume">Resume</div>
-                <div href="#contact" class="nav_item go_to nav_side" data-id="contact">Contact</div>
+                <div class="nav_title unselectable">Contents</div>
+                <div href="#about" class="nav_item go_to nav_side unselectable" data-id="about">About</div>
+                <div href="#experience" class="nav_item go_to nav_side unselectable" data-id="experience">Experience</div>
+                <div href="#projects" class="nav_item go_to nav_side unselectable" data-id="projects">Projects</div>
+                <div href="#resume" class="nav_item go_to nav_side unselectable" data-id="resume">Resume</div>
+                <div href="#contact" class="nav_item go_to nav_side unselectable" data-id="contact">Contact</div>
             </div>
         </div>
         <div class="container_body">
             <div class="container_nav_side">
-                <div class="nav_title">Contents</div>
-                <div href="#about" class="nav_item go_to" data-id="about">About</div>
-                <div href="#experience" class="nav_item go_to" data-id="experience">Experience</div>
-                <div href="#projects" class="nav_item go_to" data-id="projects">Projects</div>
-                <div href="#resume" class="nav_item go_to" data-id="resume">Resume</div>
-                <div href="#contact" class="nav_item go_to" data-id="contact">Contact</div>
+                <div class="nav_title unselectable">Contents</div>
+                <div href="#about" class="nav_item go_to unselectable" data-id="about">About</div>
+                <div href="#experience" class="nav_item go_to unselectable" data-id="experience">Experience</div>
+                <div href="#projects" class="nav_item go_to unselectable" data-id="projects">Projects</div>
+                <div href="#resume" class="nav_item go_to unselectable" data-id="resume">Resume</div>
+                <div href="#contact" class="nav_item go_to unselectable" data-id="contact">Contact</div>
             </div>
             <div class="container_content">
                 <section class="section" id="about" data-id="about">
@@ -114,4 +113,5 @@
             </div>
         </div>
     </body>
+    <script src="./javascript/index.js" ></script>
     </html>
