@@ -21,13 +21,37 @@ function scrollToSection(str) {
 // define toggle mobile view nav menu
 function toggleNav() {
     const nav_top = document.querySelector('div.container_nav_top');
+    // if (isNavHidden()) {
+    //     nav_top.classList.remove('animate_show_nav');
+    // } else {
+    //     nav_top.classList.add('animate_show_nav');
+    // }
     nav_top.classList.toggle('animate_show_nav');
+    //nav_toggle_visible = !nav_toggle_visible;
+    //nav_top.classList.toggle('animate_show_nav');
+}
+
+function showNav() {
+    const nav_top = document.querySelector('div.container_nav_top');
+    if (isNavHidden()) {
+        nav_top.classList.toggle('animate_show_nav');
+        nav_toggle_visible = true;
+    }
+    console.log("nav_toggle: "+isNavHidden());
+}
+
+function isNavHidden() {
+    const nav_top = document.querySelector('div.container_nav_top');
+    return !(nav_top.classList.contains('animate_show_nav'));
 }
 
 // define hide mobile view nav menu
 function hideNav() {
     const nav_top = document.querySelector('div.container_nav_top');
-    nav_top.classList.remove('animate_show_nav');
+    if (!isNavHidden()) {
+        nav_top.classList.remove('animate_show_nav');
+    }
+    console.log("nav_toggle: "+isNavHidden());
 }
 
 const top_offset = 77; // header=52 + margin=20
@@ -46,6 +70,7 @@ console.log(sections_list);
 // add 'click' event listener to document: dismiss nav when document clicked
 document.addEventListener('click', () => {
     hideNav();
+    console.log("nav_toggle: "+isNavHidden());
 }, true);
 
 // get all nav_items
@@ -63,10 +88,12 @@ for (let i=0; i < nav_items.length; i++) {
 
 /* Mobile Responsive */
 const nav_toggle = document.querySelector('div.nav_top_toggle');
+
 nav_toggle.addEventListener('click', () => {
     console.log("toggle clicked");
     toggleNav();
-});
+    //console.log("nav_toggle: "+!isNavHidden());
+},true);
 
 
 // get scroll notification every 100ms
@@ -78,6 +105,7 @@ function onScroll() {
     for (let [sec, off] of sections_list) {
         console.log(sec + " = " + off);
     }
+    //hideNav();
 }
 
 function visibleSections() {
@@ -91,7 +119,7 @@ function visibleSections() {
         return object section:offsetTop
     */
    const windowTop = window.scrollY;
-   sections_list
+   
 
    
 }
